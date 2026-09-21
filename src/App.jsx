@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Intro from "./components/Intro";
 import Particles from "./components/Particles";
 import Scene from "./components/Scene";
 import BottomBar from "./components/BottomBar";
 import { scenes } from "./data/content";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   const [entered, setEntered] = useState(false);
@@ -15,17 +18,22 @@ export default function App() {
     if (!entered) return;
 
     const lenis = new Lenis({
-      duration: 1.15,
+      duration: 0.9,
       smoothWheel: true,
       smoothTouch: false,
-      touchMultiplier: 1.15,
+      touchMultiplier: 1.1,
+      wheelMultiplier: 0.9,
+      lerp: 0.08,
     });
 
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const updateScroll = (time) => {
+      lenis.raf(time * 1000);
     };
-    const rafId = requestAnimationFrame(raf);
+
+    gsap.ticker.add(updateScroll);
+    gsap.ticker.lagSmoothing(0);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -42,8 +50,8 @@ export default function App() {
     document.querySelectorAll(".scene").forEach((el) => observer.observe(el));
 
     return () => {
-      cancelAnimationFrame(rafId);
       observer.disconnect();
+      gsap.ticker.remove(updateScroll);
       lenis.destroy();
     };
   }, [entered]);
