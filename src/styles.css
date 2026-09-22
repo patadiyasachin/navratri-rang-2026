@@ -297,8 +297,9 @@ button {
 
 .scene-media {
   position: relative;
-  height: min(72vw, 620px);
-  min-height: 340px;
+  width: min(100%, 560px);
+  height: clamp(360px, 52vw, 600px);
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 26px;
   border: 1px solid rgba(255, 205, 109, .18);
@@ -320,7 +321,8 @@ button {
 .scene-image {
   position: absolute;
   inset: 0;
-  background-position: center;
+  border-radius: inherit;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   filter: saturate(1.15) contrast(1.04) brightness(0.9);
@@ -336,7 +338,7 @@ button {
   aspect-ratio: 3 / 4;
   border-radius: 18px;
   border: 2px solid rgba(255, 224, 156, 0.36);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .35);
@@ -427,6 +429,122 @@ button {
   font-size: .7rem;
   letter-spacing: .2em;
   color: #ffd67a;
+}
+
+.site-footer {
+  padding: 0 18px 120px;
+  background: linear-gradient(180deg, rgba(17, 7, 5, 0.98) 0%, rgba(10, 5, 4, 1) 100%);
+}
+
+.photographer-card {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 22px 20px 18px;
+  border: 1px solid rgba(255, 205, 109, 0.2);
+  border-radius: 22px;
+  background: rgba(255, 248, 236, 0.96);
+  color: #2a211d;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.18);
+}
+
+.card-topline {
+  text-align: center;
+  font-size: .7rem;
+  letter-spacing: .15em;
+  color: rgba(42, 33, 29, 0.8);
+  text-transform: uppercase;
+}
+
+.card-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.brand-mark-small {
+  font-size: 2rem;
+  color: #231d1a;
+}
+
+.card-brand h3 {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: #201c1a;
+}
+
+.card-brand p {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: .68rem;
+  letter-spacing: .22em;
+  color: rgba(42, 33, 29, 0.9);
+}
+
+.card-info-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(42, 33, 29, 0.65);
+}
+
+.card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .9rem;
+  color: #251f1c;
+}
+
+.card-info-item .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(42, 33, 29, 0.08);
+  font-size: .8rem;
+}
+
+.card-meta {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(42, 33, 29, 0.65);
+  text-align: center;
+  font-size: .82rem;
+  color: rgba(42, 33, 29, 0.8);
+}
+
+.footer-credit-strip {
+  max-width: 980px;
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 16px 0;
+  color: #ffe7a9;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: none;
+}
+
+.footer-credit-strip strong {
+  color: #ffe6a7;
+  font-weight: 700;
+}
+
+.footer-credit-strip a {
+  color: #ffe6a7;
 }
 
 .bottom-bar {

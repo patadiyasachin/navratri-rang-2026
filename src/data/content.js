@@ -2,7 +2,7 @@ export const scenes = [
   {
     id: "welcome",
     image: "/images/poster-01.jpeg",
-    secondaryImage: "/images/poster-02.jpeg",
+    secondaryImage: "/images/poster-06.jpeg",
     eyebrow: "SHRI SAVA GROUP PRESENTS",
     title: "નિધિવન રાત્રિ",
     subtitle: "ONE DAY GARBA CELEBRATION",
@@ -14,7 +14,7 @@ export const scenes = [
   },
   {
     id: "radha-krishna",
-    image: "/images/poster-02.jpeg",
+    image: "/images/poster-06.jpeg",
     secondaryImage: "/images/poster-03.jpeg",
     eyebrow: "ONE DAY CELEBRATION",
     title: "રાધા કૃષ્ણ",
@@ -28,7 +28,7 @@ export const scenes = [
   {
     id: "rajkot",
     image: "/images/poster-03.jpeg",
-    secondaryImage: "/images/poster-04.jpeg",
+    secondaryImage: "/images/poster-05.jpeg",
     eyebrow: "RAJKOT'S BIGGEST GROUND",
     title: "WELCOME NAVRATRI 2026",
     subtitle: "A ONE DAY CELEBRATION",
@@ -40,7 +40,7 @@ export const scenes = [
   },
   {
     id: "garba-night",
-    image: "/images/poster-04.jpeg",
+    image: "/images/poster-05.jpeg",
     secondaryImage: "/images/poster-01.jpeg",
     eyebrow: "GARBA NI RAAT",
     title: "સૌની વાત • ગરબાની રાત",

@@ -99,6 +99,41 @@ export default function App() {
         <strong>SHRI SAVA GROUP</strong>
       </section>
 
+      <footer className="site-footer">
+        <div className="photographer-card">
+          <div className="card-topline">Photography • Cinematography • Brand &amp; Event Visuals</div>
+          <div className="card-brand">
+            <span className="brand-mark-small">✦</span>
+            <div>
+              <h3>moments</h3>
+              <p>BY AKSHAY SONI</p>
+            </div>
+          </div>
+
+          <div className="card-info-row">
+            <div className="card-info-item">
+              <span className="icon">☎</span>
+              <span>+91 91570 98233</span>
+            </div>
+            <div className="card-info-item">
+              <span className="icon">✉</span>
+              <span>momentsbyakshaysoni@gmail.com</span>
+            </div>
+          </div>
+
+          <div className="card-meta">
+            <span>"VRAJSATRITA", 9, Gayatri Nagar, Near Jalaram chowk, Bhaktinagar Circle, Rajkot</span>
+          </div>
+        </div>
+
+        <div className="footer-credit-strip">
+          <span>Made by this website</span>
+          <strong>Sachin Patadiya</strong>
+          <span>•</span>
+          <a href="tel:+917572819370">+91 75728 19370</a>
+        </div>
+      </footer>
+
       <BottomBar />
     </main>
   );
