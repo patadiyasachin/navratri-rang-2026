@@ -499,8 +499,15 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
   font-size: .9rem;
   color: #251f1c;
+}
+
+.card-info-item span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .card-info-item .icon {
@@ -647,6 +654,44 @@ button {
 
   .bottom-bar {
     width: min(600px, 70vw);
+  }
+}
+
+@media (max-width: 640px) {
+  .photographer-card {
+    padding: 18px 14px 16px;
+  }
+
+  .card-topline {
+    letter-spacing: .08em;
+    font-size: .62rem;
+  }
+
+  .card-brand {
+    gap: 8px;
+  }
+
+  .card-brand p {
+    letter-spacing: .12em;
+  }
+
+  .card-info-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card-info-item {
+    font-size: .78rem;
+  }
+
+  .card-meta {
+    font-size: .72rem;
+  }
+
+  .footer-credit-strip {
+    gap: 8px;
+    font-size: .66rem;
+    text-align: center;
   }
 }
 
