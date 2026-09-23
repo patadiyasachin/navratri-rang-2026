@@ -491,7 +491,7 @@ button {
 
 .footer-credit-strip {
   max-width: 760px;
-  margin: 24px auto 0;
+  margin: 26px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,15 +555,24 @@ button {
   bottom: max(10px, env(safe-area-inset-bottom));
   transform: translateX(-50%);
   width: min(92vw, 460px);
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: grid;
+  gap: 6px;
   padding: 8px;
   border: 1px solid rgba(255, 211, 113, .25);
   border-radius: 18px;
   background: rgba(20, 7, 4, .78);
   backdrop-filter: blur(16px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, .35);
+}
+
+.bottom-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-row {
+  min-height: 44px;
 }
 
 .call-button {
@@ -588,6 +597,31 @@ button {
 
 .phone-list a {
   white-space: nowrap;
+}
+
+.address-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 211, 113, 0.18);
+}
+
+.address-line {
+  display: block;
+  line-height: 1.2;
+  font-size: .56rem;
+  letter-spacing: .01em;
+  color: rgba(247, 217, 147, 0.92);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 420px) {
+  .address-line {
+    font-size: .48rem;
+  }
 }
 
 @keyframes gentleFloat {
