@@ -1,0 +1,54 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#D9D0C1"/>
+  <g transform="translate(480 30)">
+    <path d="M142 25L163 25L182 33L199 61L206 94L204 125L189 148L162 162L134 165L106 160L80 147L63 121L58 91L60 56L70 34L93 24H142Z" stroke="#2E2E2D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M175 40L210 41L221 57L227 70L214 84L194 86L182 72L178 58L175 40Z" stroke="#2E2E2D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="134" cy="96" r="60" stroke="#2E2E2D" stroke-width="5"/>
+    <circle cx="134" cy="96" r="28" fill="#D9D0C1" stroke="#2E2E2D" stroke-width="4"/>
+    <circle cx="134" cy="96" r="18" fill="#2E2E2D"/>
+    <circle cx="109" cy="127" r="9" fill="#2E2E2D"/>
+    <circle cx="168" cy="85" r="7" fill="#2E2E2D"/>
+    <path d="M68 74C83 51 96 43 113 38" stroke="#2E2E2D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M179 74C168 56 155 47 136 41" stroke="#2E2E2D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(0 110)">
+    <text x="600" y="220" text-anchor="middle" font-size="172" font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#2C2926">moments</text>
+    <text x="600" y="285" text-anchor="middle" font-size="28" font-family="Arial, sans-serif" letter-spacing="8" fill="#2C2926">BY AKSHAY SONI</text>
+    <line x1="300" y1="326" x2="430" y2="326" stroke="#2C2926" stroke-width="2"/>
+    <path d="M430 326L448 326L455 326L470 326L496 326" stroke="#2C2926" stroke-width="2"/>
+    <circle cx="484" cy="326" r="8" fill="#2C2926"/>
+    <path d="M484 318V334" stroke="#D9D0C1" stroke-width="2"/>
+    <path d="M476 326H492" stroke="#D9D0C1" stroke-width="2"/>
+    <line x1="720" y1="326" x2="900" y2="326" stroke="#2C2926" stroke-width="2"/>
+    <path d="M701 326L683 326L675 326L660 326L634 326" stroke="#2C2926" stroke-width="2"/>
+    <circle cx="716" cy="326" r="8" fill="#2C2926"/>
+    <path d="M716 318V334" stroke="#D9D0C1" stroke-width="2"/>
+    <path d="M708 326H724" stroke="#D9D0C1" stroke-width="2"/>
+    <text x="600" y="410" text-anchor="middle" font-size="46" font-weight="700" font-family="Arial, sans-serif" fill="#2C2926">Photography • Cinematography • Brand &amp; Event Visuals</text>
+  </g>
+  <g transform="translate(0 0)">
+    <g transform="translate(120 465)">
+      <circle cx="18" cy="25" r="18" fill="#2C2926"/>
+      <path d="M11 24L18 31L28 16" stroke="#D9D0C1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="34" font-size="32" font-family="Arial, sans-serif" fill="#2C2926">+919157098233</text>
+    </g>
+    <g transform="translate(120 540)">
+      <rect x="0" y="12" width="36" height="28" rx="6" fill="#2C2926"/>
+      <path d="M5 15L18 27L31 15" stroke="#D9D0C1" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="52" y="34" font-size="28" font-family="Arial, sans-serif" fill="#2C2926">momentsbyakshaysoni@gmail.com</text>
+    </g>
+    <g transform="translate(790 468)">
+      <text x="0" y="34" font-size="28" font-family="Arial, sans-serif" fill="#2C2926">momentsbyakshaysoni</text>
+      <circle cx="340" cy="20" r="18" fill="#2C2926"/>
+      <circle cx="340" cy="20" r="9" fill="#D9D0C1"/>
+      <path d="M328 19C334 14 347 14 353 19" stroke="#D9D0C1" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(790 540)">
+      <text x="0" y="22" font-size="24" font-family="Arial, sans-serif" fill="#2C2926">“VRAJSARITA”, 9, Gayatri nagar, Near</text>
+      <text x="0" y="52" font-size="24" font-family="Arial, sans-serif" fill="#2C2926">jalaram chowk, Bhaktinagar Circle, Rajkot</text>
+      <circle cx="470" cy="18" r="16" fill="#2C2926"/>
+      <path d="M462 18H478" stroke="#D9D0C1" stroke-width="3" stroke-linecap="round"/>
+      <path d="M470 10V26" stroke="#D9D0C1" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

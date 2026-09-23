@@ -13,6 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 export default function App() {
   const [entered, setEntered] = useState(false);
   const [active, setActive] = useState(0);
+  const [audioEnabled, setAudioEnabled] = useState(true);
+  const [volume, setVolume] = useState(0.25);
+  const audioRef = React.useRef(null);
 
   useEffect(() => {
     if (!entered) return;
@@ -56,17 +59,65 @@ export default function App() {
     };
   }, [entered]);
 
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.volume = volume;
+    audio.muted = !audioEnabled;
+  }, [volume, audioEnabled]);
+
   const enter = () => {
     setEntered(true);
     requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: "instant" });
     });
+
+    const audio = audioRef.current;
+    if (audio) {
+      audio.volume = volume;
+      audio.muted = !audioEnabled;
+      audio.play().catch(() => { });
+    }
+  };
+
+  const toggleAudio = () => {
+    setAudioEnabled((prev) => !prev);
   };
 
   if (!entered) return <Intro onEnter={enter} />;
 
   return (
     <main>
+      <div className="audio-control">
+        <button
+          type="button"
+          className="audio-toggle"
+          onClick={toggleAudio}
+          aria-label={audioEnabled ? "Mute music" : "Unmute music"}
+        >
+          {audioEnabled ? "🔊" : "🔇"}
+        </button>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.05"
+          value={volume}
+          onChange={(event) => setVolume(Number(event.target.value))}
+          aria-label="Volume"
+          className="audio-slider"
+        />
+      </div>
+
+      <audio
+        ref={audioRef}
+        src="/music/kalsstockmedia-free-soul-instrumental-garba-song-2025-405946.mp3"
+        loop
+        autoPlay
+        playsInline
+      />
+
       <header className="top-nav">
         <div className="brand-mark">✦</div>
         <div className="nav-title">NAVRATRI RANG 2026</div>
@@ -100,34 +151,16 @@ export default function App() {
       </section>
 
       <footer className="site-footer">
-        <div className="photographer-card">
-          <div className="card-topline">Photography • Cinematography • Brand &amp; Event Visuals</div>
-          <div className="card-brand">
-            <span className="brand-mark-small">✦</span>
-            <div>
-              <h3>moments</h3>
-              <p>BY AKSHAY SONI</p>
-            </div>
-          </div>
-
-          <div className="card-info-row">
-            <div className="card-info-item">
-              <span className="icon">☎</span>
-              <span>+91 91570 98233</span>
-            </div>
-            <div className="card-info-item">
-              <span className="icon">✉</span>
-              <span>momentsbyakshaysoni@gmail.com</span>
-            </div>
-          </div>
-
-          <div className="card-meta">
-            <span>"VRAJSATRITA", 9, Gayatri Nagar, Near Jalaram chowk, Bhaktinagar Circle, Rajkot</span>
-          </div>
+        <div className="photographer-card-wrap">
+          <img
+            className="photographer-card-image"
+            src="/images/photographer-card.png"
+            alt="Photographer card"
+          />
         </div>
 
         <div className="footer-credit-strip">
-          <span>Made by this website</span>
+          <span>Made by</span>
           <strong>Sachin Patadiya</strong>
           <span>•</span>
           <a href="tel:+917572819370">+91 75728 19370</a>
