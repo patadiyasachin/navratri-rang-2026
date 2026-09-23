@@ -160,9 +160,10 @@ export default function App() {
         </div>
 
         <div className="footer-credit-strip">
-          <span>Made by</span>
+          <span>Made by this website</span>
+          <span className="credit-divider">•</span>
           <strong>Sachin Patadiya</strong>
-          <span>•</span>
+          <span className="credit-divider">•</span>
           <a href="tel:+917572819370">+91 75728 19370</a>
         </div>
       </footer>
