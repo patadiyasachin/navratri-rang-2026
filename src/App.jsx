@@ -120,7 +120,7 @@ export default function App() {
 
       <header className="top-nav">
         <div className="brand-mark">✦</div>
-        <div className="nav-title">NAVRATRI RANG 2026</div>
+        <div className="nav-title">Nidhivan Ratri 2026</div>
         <div className="nav-count">{String(active + 1).padStart(2, "0")} / 04</div>
       </header>
 
@@ -165,6 +165,30 @@ export default function App() {
           <strong>Sachin Patadiya</strong>
           <span className="credit-divider">•</span>
           <a href="tel:+917572819370">+91 75728 19370</a>
+          <span className="credit-divider">•</span>
+          <a
+            href="https://instagram.com/mr.sachin2004"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open Instagram profile"
+            className="instagram-link"
+          >
+            <svg className="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <defs>
+                <linearGradient id="insta-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#feda75" />
+                  <stop offset="30%" stopColor="#fa7e1e" />
+                  <stop offset="60%" stopColor="#d62976" />
+                  <stop offset="100%" stopColor="#4f5bd5" />
+                </linearGradient>
+              </defs>
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="url(#insta-gradient)" />
+              <rect x="7" y="7" width="10" height="10" rx="3" fill="none" stroke="white" strokeWidth="1.5" />
+              <circle cx="12" cy="12" r="2.5" fill="none" stroke="white" strokeWidth="1.5" />
+              <circle cx="16.3" cy="7.7" r="1.1" fill="white" />
+            </svg>
+            <span>@mr.sachin2004</span>
+          </a>
         </div>
       </footer>
 

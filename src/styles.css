@@ -516,6 +516,21 @@ button {
   color: #f8ddb1;
 }
 
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.instagram-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(255, 173, 91, 0.26);
+}
+
 .credit-divider {
   opacity: 0.9;
 }

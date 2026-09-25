@@ -1,4 +1,4 @@
-# Navratri Rang 2026 — React Website
+# Nidhivan Ratri 2026 — React Website
 
 A mobile-first cinematic Navratri landing page built with React + Vite + GSAP + Lenis.
 
