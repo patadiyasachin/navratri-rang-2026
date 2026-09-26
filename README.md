@@ -44,4 +44,4 @@ Replace poster files in:
 `public/images/`
 
 The current content uses only information visible in the supplied posters:
-10 October 2026, 6:00 PM, Sahiyar Club / Racecourse Grounds, Rajkot, Shri Sava Group, and the two booking numbers.
+10 October 2026, 6:00 PM, Sahiyar Club / Racecourse Grounds, Rajkot, Shree Sava Group, and the two booking numbers.

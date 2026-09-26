@@ -8,7 +8,7 @@ export default function BottomBar() {
     <div className="bottom-bar">
       <div className="bottom-bar-row top-row">
         <a className="call-button" href={`tel:+91${contactNumbers[0].replace(/\s/g, "")}`}>
-          BOOK YOUR PASS
+          BOOK YOUR PASSES
         </a>
 
         <div className="phone-list">

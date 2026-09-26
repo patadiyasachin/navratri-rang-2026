@@ -147,7 +147,7 @@ export default function App() {
         <h2>See you on<br />10 October 2026</h2>
         <span>Sahiyar Club • Racecourse Grounds • Rajkot</span>
         <div className="closing-line" />
-        <strong>SHRI SAVA GROUP</strong>
+        <strong>SHREE SAVA GROUP</strong>
       </section>
 
       <footer className="site-footer">

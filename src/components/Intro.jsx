@@ -19,11 +19,11 @@ export default function Intro({ onEnter }) {
     <div ref={root} className="intro">
       <div className="intro-glow" />
       <div className="intro-symbol">✦</div>
-      <div className="intro-kicker">SHRI SAVA GROUP • 2026</div>
+      <div className="intro-kicker">SHREE SAVA GROUP • 2026</div>
       <h1 className="intro-title">નિધિવન રાત્રિ</h1>
       <p className="intro-copy">A cinematic Navratri experience</p>
       <button className="intro-button" onClick={onEnter}>
-        ENTER THE EXPERIENCE <span>↓</span>
+        ENTER TO EXPERIENCE <span>↓</span>
       </button>
       <div className="intro-foot">10 OCTOBER 2026 • RAJKOT</div>
     </div>
