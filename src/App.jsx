@@ -160,7 +160,7 @@ export default function App() {
         </div>
 
         <div className="footer-credit-strip">
-          <span>Made by this website</span>
+          <span>Designed & Developed with ❤️ by</span>
           <span className="credit-divider">•</span>
           <strong>Sachin Patadiya</strong>
           <span className="credit-divider">•</span>
